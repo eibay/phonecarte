@@ -9,7 +9,7 @@ const Phone = (props) => {
                 <Card.Header>{props.productName}</Card.Header>
                 <Container><Image src={props.productImage}/></Container>
                 <Card.Meta>{props.price}</Card.Meta>
-                <Button>Add To Cart</Button>
+                <Button onClick={() => props.addToCart(props.productName)}>Add To Cart</Button>
             </Card.Content>
         </Card>
         </>
