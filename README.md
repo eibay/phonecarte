@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PhoneCarte
 
-## Available Scripts
+Frontend demo of my e-commerce listing called 'PhoneCarte', with capability for selected items to be added to cart and remove from cart using reactjs. Below are the features currently being implemented. 
 
-In the project directory, you can run:
+  - filter and list only items that are marked as published
+  - add to cart and remove from items list
+  - remove from cart and add back to items list
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Tech
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+PhoneCarte uses a number of open source projects to work properly:
 
-### `npm test`
+* [reactjs](https://reactjs.org/) - Component based javasript via create-react-app boilerplate
+* [create-react-app](https://www.npmjs.com/package/create-react-app) - Boilerplate for the react structure 
+* [jest](https://jestjs.io/) - testing framework used in this app
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Development
 
-### `npm run build`
+PhoneCarte requires [Node.js](https://nodejs.org/) to run.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install the dependencies and devDependencies and start the server.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```sh
+$ npm install or yarn install
+$ npm start or yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running Tests
 
-### `npm run eject`
+```sh
+$ npm test
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Todos
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ - Write more tests
+ - Display more details to show in detail page
+ - Add animation
+ - Add real API backend using node or graphql and apollo
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+License
+----
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+MIT

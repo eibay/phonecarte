@@ -3,16 +3,16 @@ import {Card, Icon, Button} from 'semantic-ui-react'
 
 const Cart = (props) => {
     return(
-    <Card>
-        <Card.Content>
-            <>
+    <Card.Group>
+        <Card>
+            <Card.Content>
                 <Button icon onClick={() => props.removeFromCart(props.item)}>
                     <Icon name='delete' />
                 </Button>
                 {props.item}  
-            </>
-        </Card.Content>
-    </Card>
+            </Card.Content>
+        </Card>
+    </Card.Group>
     )
 }
 

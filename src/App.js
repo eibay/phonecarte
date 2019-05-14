@@ -53,14 +53,14 @@ class App extends React.Component{
             <Container>
                 <Grid stackable divided> 
                     <Grid.Row columns={2}>
-                        <Grid.Column textAlign='center'>
+                        <Grid.Column textAlign='center' width={13}>
                             <h1>Product List</h1>
                             <Grid.Row>
                                 <Phones {...phoneProps} />
                             </Grid.Row>
                         </Grid.Column>
 
-                        <Grid.Column textAlign='center'>
+                        <Grid.Column textAlign='center' width={3}>
                             <h1>Shopping Cart</h1>
                             <Container textAlign='left'>
                                 {cart.map((item) => {
