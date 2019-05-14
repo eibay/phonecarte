@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {Grid, Container} from 'semantic-ui-react'
+import Data from './data/data.json'
+import Phones from './container/Phones'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+    render(){
+        return(
+            <>
+            <Container>
+                <Grid stackable> 
+                    <Grid.Row columns={2}>
+                            <Grid.Column>
+                                <h1>Product List</h1>
+                                <Grid.Row>
+                                    <Phones data={Data} />
+                                </Grid.Row>
+                            </Grid.Column>
+                            <Grid.Column>
+                                <h1>Shopping Cart</h1>
+                                <h4>Items</h4>
+                                <h4>Items</h4>
+                                <h4>Items</h4>
+                                <h4>Items</h4>
+                            </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+            </Container>
+            </>
+        )
+    }
 }
 
-export default App;
+export default App
